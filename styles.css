@@ -16,16 +16,13 @@ body{
     background-color: var(--white);
 }
 .container{
-    
     border-left: 2px solid var(--black);
     border-bottom: 2px solid var(--black);
     height: fit-content;
     width:fit-content;
-    padding:5px;
-    margin: 5px;
-}
-.container:hover{
-    background-color: var(--green);
+    font-size: 25px;
+    padding-left:6px;
+    margin: 10px;
 }
 h2,h3{
     margin:3px
