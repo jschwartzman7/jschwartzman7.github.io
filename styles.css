@@ -1,23 +1,36 @@
+:root {
+    --blue: #0E60CC;
+    --green: #0B6B4D;
+    --red: #B80C09;
+    --white: #E6E6E6;
+    --black: #040F16;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
-    display:grid;
+    display:block;
+    border-left: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
     margin: 15px;
-}
-#githubProjectsContainer{
-    
-}
-#ballBounceGameContainer{
-
+    justify-items: center;
+    color: var(--black);
+    background-color: var(--white);
 }
 .container{
-    border-radius: 10%;
-    border-color: black;
-    border-width:3px;
-    border-style: solid;
-    display: grid;
+    
+    border-left: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
     height: fit-content;
     width:fit-content;
-    padding:15px;
-    margin: 15px;
-    background-color: rgb(164, 190, 190);
+    padding:5px;
+    margin: 5px;
+}
+.container:hover{
+    background-color: var(--green);
+}
+h2,h3{
+    margin:3px
+}
+a{
+    color: var(--black);
+    text-decoration: none;
 }
