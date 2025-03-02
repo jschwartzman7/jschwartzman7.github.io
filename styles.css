@@ -19,15 +19,19 @@ body{
     border-left: 2px solid var(--black);
     border-bottom: 2px solid var(--black);
     height: fit-content;
-    width:fit-content;
+    width: fit-content;
+    justify-items: center;
+    display: grid;
     font-size: 25px;
     padding-left:6px;
     margin: 10px;
+}
+#linksContainer{
+    display: inline-block;
 }
 h2,h3{
     margin:3px
 }
 a{
     color: var(--black);
-    text-decoration: none;
 }
