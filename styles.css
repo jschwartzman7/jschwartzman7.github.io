@@ -1,61 +1,84 @@
 :root {
-    --primaryColor: #a8a7a8;
-    --secondaryColor: #807f80;
+    --primaryColor: #DCDCD7;
+    --blue: #4A567F;
     --green: #0B6B4D;
-    --red: #B80C09;
-    --backgroundColor: #4b4b5c;
-    --textColor: #000000;
+    --red: #893A42;
+    --backgroundColor: #1A1A1A;
+    --textColor: #807F80;
+    
+    --spacingLowest: 2px;
+    --spacingLow: 5px;
+    --spacingMedium: 10px;
+    --spacingHigh: 20px;
+    --spacingHigher: 30px;
+    --spacingHighest: 50px;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
     display: block;
-    margin: 10px;
+    margin: var(--spacingMedium);
     justify-items: center;
     color: var(--textColor);
     background-color: var(--backgroundColor);
 }
-.container{
-    background-color: var(--primaryColor);
-    border-radius: 6px;
-    min-width: 300px;
-    max-width: 1920px;
-    min-height: 33px;
-    justify-items: center;
+.clickable{
+    background-color: var(--textColor);
+    color: var(--primaryColor);
+    border-radius: var(--spacingLow);
+    cursor: pointer;
     justify-content: center;
     display: flex;
     align-items: center;
-    align-content: center;
-    font-size: 25px;
-    padding: 10px;
-    margin: 10px;
+    margin-bottom: var(--spacingHighest);
+    width: 350px;
+    height: 70px;
+    margin: var(--spacingHigh);
+}
+.clickable:hover{
+    background-color: var(--backgroundColor);
+    border: 3px solid var(--textColor);
+}
+.container{
+    background-color: var(--blue);
+    color: var(--primaryColor);
+    font-size: var(--textColor);
+    border-radius: var(--spacingLow);
+    display: grid;
+    min-width: 300px;
+    max-width: 1200px;
+    font-size: var(--spacingHigh);
+    padding: var(--spacingMedium);
+    margin: var(--spacingMedium);
     flex-wrap: wrap;
 }
-.button:hover{
-    background-color: var(--secondaryColor);
+h1,h2,h3,p{
+    margin: var(--spacingMedium);
+    padding: var(--spacingMedium);
 }
-#linksContainer{
-    border-top: 2px solid var(--textColor);
-    border-radius: 0px;;
-    background-color: var(--backgroundColor);
-}
-.githubProjectsContainer{
-    display: grid;
-}
-h1,h2,h3,p,img{
-    margin:5px;
-    padding: 5px;
-    cursor: default;
-}
-video{
-    border: 3px solid var(--backgroundColor);
-    margin:15px;
+img{
+    padding: var(--spacingLow)
 }
 a{
-    color: var(--textColor);
+    font-size: var(--spacingHigher);
     text-decoration: none;
-    margin-left:7px;
-    margin-right:7px;
+    color: var(--primaryColor);
+    margin: var(--spacingLow);
+    padding: var(--spacingLow);
+}
+video{
+    border: var(--spacingLow) solid var(--backgroundColor);
+    margin: var(--spacingMedium);
 }
 label{
-    font-size: 17px;
+    font-size: var(--spacingHigh);
+}
+#linksContainer{
+    width: 350px;
+    border-top: var(--spacingLowest) solid var(--primaryColor);
+    border-radius: None;
+    padding: var(--spacingMedium);
+}
+.videosContainer{
+    display: flex;
+    flex-wrap: wrap;
 }
