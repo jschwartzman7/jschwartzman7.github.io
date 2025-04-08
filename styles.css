@@ -50,13 +50,14 @@ body{
     padding: var(--spacingMedium);
     margin: var(--spacingMedium);
     flex-wrap: wrap;
+    justify-items: center;
 }
 h1,h2,h3,p{
     margin: var(--spacingMedium);
     padding: var(--spacingMedium);
 }
 img{
-    padding: var(--spacingLow)
+    padding: var(--spacingLow);
 }
 a{
     font-size: var(--spacingHigher);
@@ -71,6 +72,7 @@ video{
 }
 label{
     font-size: var(--spacingHigh);
+    text-align:center;
 }
 #linksContainer{
     width: 350px;
@@ -81,4 +83,7 @@ label{
 .videosContainer{
     display: flex;
     flex-wrap: wrap;
+}
+#ageDiv{
+    display:inline-block;
 }
