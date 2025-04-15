@@ -1,18 +1,18 @@
 let videosContainers = document.querySelectorAll(".videosContainer");
 let currentVideo = null;
+let thumbnailWidth = 300;
+let videoWidth = 700;
+
 for (let videosContainer of videosContainers) {
     for (let video of videosContainer.children) {
         video.addEventListener("click", function() {
             if(video.paused) {
                 video.play();
-                video.width = 800;
-                video.controls = true;
+                video.width = videoWidth;
                 resetOtherVideos(video);
             }
             else {
-                video.pause();
-                video.controls = false;
-                video.width = 300;
+                resetOtherVideos(null);
             }
         });
     }
@@ -23,7 +23,7 @@ function resetOtherVideos(currentVideo) {
             if (video !== currentVideo) {
                 video.pause();
                 video.controls = false;
-                video.width = 300;
+                video.width = thumbnailWidth;
             }
         }
         

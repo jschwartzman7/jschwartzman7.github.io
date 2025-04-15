@@ -36,7 +36,7 @@ body{
 }
 .clickable:hover{
     background-color: var(--backgroundColor);
-    border: 3px solid var(--textColor);
+    border: var(--spacingLow) solid var(--textColor);
 }
 .container{
     background-color: var(--blue);
@@ -69,6 +69,7 @@ a{
 video{
     border: var(--spacingLow) solid var(--backgroundColor);
     margin: var(--spacingMedium);
+    max-height: 700;
 }
 label{
     font-size: var(--spacingHigh);
@@ -86,4 +87,7 @@ label{
 }
 #ageDiv{
     display:inline-block;
+}
+.githubLink:hover{
+    color: var(--textColor);
 }
