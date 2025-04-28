@@ -1,16 +1,18 @@
 :root {
     --primaryColor: #DCDCD7;
     --blue: #4A567F;
-    --green: #0B6B4D;
-    --red: #893A42;
+    --green: #286955;
+    --red: #682c32;
     --backgroundColor: #1A1A1A;
     --textColor: #807F80;
     
     --spacingLowest: 2px;
     --spacingLow: 5px;
+    --spacingMediumLow: 7px;
     --spacingMedium: 10px;
     --spacingHigh: 20px;
     --spacingHigher: 30px;
+    --spacingHigherer: 40px;
     --spacingHighest: 50px;
 }
 body{
@@ -22,24 +24,24 @@ body{
     background-color: var(--backgroundColor);
 }
 .clickable{
-    background-color: var(--textColor);
+    background-color: var(--blue);
     color: var(--primaryColor);
-    border-radius: var(--spacingLow);
+    border-radius: var(--spacingMediumLow);
     cursor: pointer;
     justify-content: center;
     display: flex;
     align-items: center;
     margin-bottom: var(--spacingHighest);
-    width: 350px;
+    width: 300px;
     height: 70px;
     margin: var(--spacingHigh);
 }
 .clickable:hover{
-    background-color: var(--backgroundColor);
-    border: var(--spacingLow) solid var(--textColor);
+    background-color: var(--textColor);
+    
 }
 .container{
-    background-color: var(--blue);
+    background-color: var(--green);
     color: var(--primaryColor);
     font-size: var(--textColor);
     border-radius: var(--spacingLow);
@@ -52,6 +54,9 @@ body{
     flex-wrap: wrap;
     justify-items: center;
 }
+h1{
+    font-size: var(--spacingHigherer);
+}
 h1,h2,h3,p{
     margin: var(--spacingMedium);
     padding: var(--spacingMedium);
@@ -61,6 +66,7 @@ img{
 }
 a{
     font-size: var(--spacingHigher);
+    font-weight: bold;
     text-decoration: none;
     color: var(--primaryColor);
     margin: var(--spacingLow);
