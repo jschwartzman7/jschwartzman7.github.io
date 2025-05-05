@@ -1,10 +1,10 @@
 :root {
     --primaryColor: #DCDCD7;
     --blue: #4A567F;
-    --green: #286955;
+    --green: #265748;
     --red: #682c32;
-    --backgroundColor: #1A1A1A;
-    --textColor: #807F80;
+    --backgroundColor: #292929;
+    --textColor: #8e8e8e;
     
     --spacingLowest: 2px;
     --spacingLow: 5px;
@@ -35,6 +35,11 @@ body{
     width: 300px;
     height: 70px;
     margin: var(--spacingHigh);
+}
+#homeButton{
+    position: fixed;
+    left:0;
+    top:0;
 }
 .clickable:hover{
     background-color: var(--textColor);
