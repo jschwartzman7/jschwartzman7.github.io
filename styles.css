@@ -1,6 +1,6 @@
 :root {
     --primaryColor: #DCDCD7;
-    --blue: #4A567F;
+    --blue: #4a617f;
     --green: #265748;
     --red: #682c32;
     --backgroundColor: #292929;
@@ -88,9 +88,10 @@ label{
 }
 #linksContainer{
     width: 350px;
-    border-top: var(--spacingLowest) solid var(--primaryColor);
+    border-top: var(--spacingLowest) solid var(--textColor);
     border-radius: None;
     padding: var(--spacingMedium);
+    margin-top: 40px;
 }
 .videosContainer{
     display: flex;
